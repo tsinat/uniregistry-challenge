@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import '../css/main.css';
-import DomainNameList from './components/nameListPage';
 
 class App extends Component {
     render() {

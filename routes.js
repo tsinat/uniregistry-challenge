@@ -3,7 +3,7 @@ import { Router, Route, IndexRoute } from 'react-router';
 
 import App from './src/app';
 import DomainNameList from './src/components/nameListPage';
-import DomainDetail from './src/components/domainNameDetail';
+import DomainDetail from './src/components/domainNameDetailPage';
 
 export default (
     <Route path="/" component={App}>
