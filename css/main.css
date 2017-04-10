@@ -1,0 +1,47 @@
+/** {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.primary {
+    color: #3B8246;
+    font-weight: 500;
+}
+.table-list {
+    border: 1px solid lightgrey;
+    padding: 2em;
+}
+/*///////////////////////////////
+////// Details page    ////////
+//////////////////////////////*/
+
+.form-detail {
+    border: 1px solid lightgrey;
+    padding: 2em;
+    height: auto;
+}
+.form-detail div {
+    margin-top: 10px;
+}
+.form-detail div button {
+    background: #3B8246;
+    color: #fff;
+}
+
+input, button {
+    border-radius: 0px !important;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
