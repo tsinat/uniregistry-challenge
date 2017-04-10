@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
 
 import App from './src/app';
-import DomainNameList from './src/components/nameList';
+import DomainNameList from './src/components/nameListPage';
 import DomainDetail from './src/components/domainNameDetail';
 
 export default (
