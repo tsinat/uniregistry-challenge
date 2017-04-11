@@ -16,13 +16,13 @@ class DomainNameList extends React.Component {
     render() {
         return (
             <ReactCSSTransitionGroup
-                    component="div"
-                    transitionName="example"
-                    transitionAppearTimeout={500}
-                    transitionAppear={true}
-                    transitionEnter={false}
-                    transitionLeave={false}>
-              <div className="container table-list">
+                component="div"
+                transitionName="example"
+                transitionAppearTimeout={500}
+                transitionAppear={true}
+                transitionEnter={false}
+                transitionLeave={false}>
+                <div className="container table-list">
                   <table className="table table-striped">
                       <thead>
                           <tr>
@@ -35,7 +35,7 @@ class DomainNameList extends React.Component {
                           { this.renderList() }
                       </tbody>
                   </table>
-              </div>
+                 </div>
             </ReactCSSTransitionGroup>
         );
     }
