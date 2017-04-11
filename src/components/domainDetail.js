@@ -11,10 +11,16 @@ class DomainDetail extends React.Component {
             price: this.props.detailData.price
         }
         this.handleChange = this.handleChange.bind(this);
+        this.handleSave = this.handleSave.bind(this);
     }
 
     handleChange(e) {
         this.setState({[e.target.name]: e.target.value})
+    }
+
+    handleSave(e) {
+        e.preventDefault();
+        this.context.router.push('/');
     }
 
     render() {
@@ -60,8 +66,12 @@ class DomainDetail extends React.Component {
                     </div>
                 </form>
             </div>
-                    );
+        );
     }
+}
+
+DomainDetail.contextTypes = {
+  router: PropTypes.object.isRequired
 }
 
 export default DomainDetail;

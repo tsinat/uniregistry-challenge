@@ -12,9 +12,7 @@ class DomainNameDetail extends React.Component {
         super(props);
 
         this.state = { detailData: ''}
-        this.handleSave = this.handleSave.bind(this);
         this.fetchDetail = this.fetchDetail.bind(this);
-        this.handleChange = this.handleChange.bind(this);
     }
 
     componentWillMount() {
@@ -30,15 +28,6 @@ class DomainNameDetail extends React.Component {
         } else if(path === 'foodfighters.lol') {
             return foodfighters;
         }
-    }
-
-    handleSave(e) {
-        e.preventDefault();
-        this.context.router.push('/');
-    }
-
-    handleChange(e) {
-        console.log('handleChange:', e.target.value);
     }
 
     render() {
@@ -57,10 +46,6 @@ class DomainNameDetail extends React.Component {
         </ReactCSSTransitionGroup>
         );
     }
-}
-
-DomainNameDetail.contextTypes = {
-  router: PropTypes.object.isRequired
 }
 
 export default DomainNameDetail;

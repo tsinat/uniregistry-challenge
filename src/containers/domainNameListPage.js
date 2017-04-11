@@ -22,6 +22,11 @@ class DomainNameList extends React.Component {
                 transitionAppear={true}
                 transitionEnter={false}
                 transitionLeave={false}>
+                <div className="panel panel-default">
+                    <div className="panel-body text-center">
+                        <h4>Uniregistry Coding Challenge</h4>
+                    </div>
+                </div>
                 <div className="container table-list">
                   <table className="table table-striped">
                       <thead>
