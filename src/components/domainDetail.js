@@ -31,7 +31,7 @@ const DomainDetail = (props) => {
                 </div>
                 <div className="col-xs-9">
                     <input type="text"
-                        value={`$${price}`}
+                        value={`${price}`}
                         onChange={props.handleChange}
                         className="form-control" id="price" />
                 </div>

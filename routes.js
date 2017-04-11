@@ -2,8 +2,8 @@ import React from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
 
 import App from './src/app';
-import DomainNameList from './src/components/nameListPage';
-import DomainDetail from './src/components/domainNameDetailPage';
+import DomainNameList from './src/containers/domainNameListPage';
+import DomainDetail from './src/containers/domainNameDetailPage';
 
 export default (
     <Route path="/" component={App}>

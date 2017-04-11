@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-import DomainDetail from './domainDetail';
+import DomainDetail from '../components/domainDetail';
 import selfdriving from '../../assets/3.json';
 import greendiamondsky from '../../assets/2.json';
 import foodfighters from '../../assets/1.json';
@@ -42,10 +43,18 @@ class DomainNameDetail extends React.Component {
 
     render() {
         return (
-            <DomainDetail
-                handleSave={this.handleSave}
-                detailData={this.state.detailData}
-                handleChange={this.handleChange} />
+        <ReactCSSTransitionGroup
+                component="div"
+                transitionName="example"
+                transitionAppearTimeout={500}
+                transitionAppear={true}
+                transitionEnter={false}
+                transitionLeave={false}>
+              <DomainDetail
+                  handleSave={this.handleSave}
+                  detailData={this.state.detailData}
+                  handleChange={this.handleChange} />
+        </ReactCSSTransitionGroup>
         );
     }
 }
