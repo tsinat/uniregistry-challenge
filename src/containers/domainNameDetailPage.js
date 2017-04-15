@@ -32,18 +32,18 @@ class DomainNameDetail extends React.Component {
 
     render() {
         return (
-        <ReactCSSTransitionGroup
-            component="div"
-            transitionName="example"
-            transitionAppearTimeout={500}
-            transitionAppear={true}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <DomainDetail
-                handleSave={this.handleSave}
-                detailData={this.state.detailData}
-                handleChange={this.handleChange} />
-        </ReactCSSTransitionGroup>
+            <ReactCSSTransitionGroup
+                component="div"
+                transitionName="example"
+                transitionAppearTimeout={500}
+                transitionAppear={true}
+                transitionEnter={false}
+                transitionLeave={false}>
+                <DomainDetail
+                    handleSave={this.handleSave}
+                    detailData={this.state.detailData}
+                    handleChange={this.handleChange} />
+            </ReactCSSTransitionGroup>
         );
     }
 }
